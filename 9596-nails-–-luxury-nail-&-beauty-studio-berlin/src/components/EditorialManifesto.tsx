@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { Language, Translations } from '../data/translations';
+import logo9596Nails from '../assets/images/logo_9596_nails_1790291551289.jpg';
 
 interface EditorialManifestoProps {
   onBrowseServices: () => void;
@@ -15,7 +16,6 @@ export const EditorialManifesto: React.FC<EditorialManifestoProps> = ({
 }) => {
   return (
     <section className="py-24 bg-gradient-to-r from-[#FFF5F9] via-[#FFEAF3] to-[#FFF5F9] relative overflow-hidden border-y border-[#F7DBE6]">
-      {/* Decorative ambient elements */}
       <div className="absolute -top-24 -right-24 w-96 h-96 bg-[#FFD7E8]/60 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-[#FFD7E8]/60 rounded-full blur-3xl pointer-events-none" />
 
@@ -29,7 +29,7 @@ export const EditorialManifesto: React.FC<EditorialManifestoProps> = ({
         >
           <div className="flex items-center gap-2 mb-4">
             <img
-              src="/src/assets/images/logo_9596_nails_1790291551289.jpg"
+              src={logo9596Nails}
               alt="9596 Nails Logo"
               className="w-8 h-8 rounded-full border border-pink-200"
             />
@@ -56,3 +56,5 @@ export const EditorialManifesto: React.FC<EditorialManifestoProps> = ({
     </section>
   );
 };
+
+export default EditorialManifesto;
