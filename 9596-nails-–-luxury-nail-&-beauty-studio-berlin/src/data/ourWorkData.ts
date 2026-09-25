@@ -9,6 +9,23 @@ export interface WorkItem {
   descriptionEn: string;
 }
 
+import workCherryBlossom from '../assets/images/work_cherry_blossom_1790291602124.jpg';
+import workY2KTribal from '../assets/images/work_y2k_tribal_1790291563333.jpg';
+import workLavenderBloom from '../assets/images/work_lavender_bloom_1790291572935.jpg';
+import workBluePorcelain from '../assets/images/work_blue_porcelain_1790291613425.jpg';
+import workPinkRhinestones from '../assets/images/work_pink_rhinestones_1790291623429.jpg';
+import workMetallicGreen from '../assets/images/work_metallic_green_1790291636408.jpg';
+import workPearlSeashell from '../assets/images/work_pearl_seashell_1790291646533.jpg';
+import workPolkaDots from '../assets/images/work_polka_dots_1790291583220.jpg';
+import workBurgundyCateye from '../assets/images/work_burgundy_cateye_1790292149206.jpg';
+import workMilkySwirls from '../assets/images/work_milky_swirls_1790292158668.jpg';
+import workJellyDroplets from '../assets/images/work_jelly_droplets_1790292169511.jpg';
+import workGothicCross from '../assets/images/work_gothic_cross_1790292179204.jpg';
+import workGlazedPeach from '../assets/images/work_glazed_peach_1790292190048.jpg';
+import workCherryMinimalist from '../assets/images/work_cherry_minimalist_1790292199348.jpg';
+import workStilettoGold from '../assets/images/work_stiletto_gold_1790292207724.jpg';
+import workFrenchDiamond from '../assets/images/work_french_diamond_1790292218022.jpg';
+
 export const OUR_WORK_GALLERY: WorkItem[] = [
   {
     id: 'w1',
@@ -16,9 +33,11 @@ export const OUR_WORK_GALLERY: WorkItem[] = [
     category: '3d-sculpted',
     categoryLabelDe: '3D Blüten & Charms',
     categoryLabelEn: '3D Florals & Charms',
-    image: '/src/assets/images/work_cherry_blossom_1790291602124.jpg',
-    descriptionDe: 'Filigran handmodellierte 3D Kirschblüten mit Miniatur-Goldkügelchen auf sanftem Nude-Verlauf.',
-    descriptionEn: 'Delicate hand-sculpted 3D cherry blossoms with miniature gold beads on soft nude ombré.',
+    image: workCherryBlossom,
+    descriptionDe:
+      'Filigran handmodellierte 3D Kirschblüten mit Miniatur-Goldkügelchen auf sanftem Nude-Verlauf.',
+    descriptionEn:
+      'Delicate hand-sculpted 3D cherry blossoms with miniature gold beads on soft nude ombré.',
   },
   {
     id: 'w2',
@@ -26,9 +45,11 @@ export const OUR_WORK_GALLERY: WorkItem[] = [
     category: 'tribal-y2k',
     categoryLabelDe: 'Liquid Chrome & Tribal',
     categoryLabelEn: 'Liquid Chrome & Tribal',
-    image: '/src/assets/images/work_y2k_tribal_1790291563333.jpg',
-    descriptionDe: 'Avantgardistische flüssige Chrom-Linien und markante Tribal-Strukturen im angesagten Y2K-Stil.',
-    descriptionEn: 'Avant-garde liquid chrome lines and sharp tribal contours in iconic Y2K aesthetic.',
+    image: workY2KTribal,
+    descriptionDe:
+      'Avantgardistische flüssige Chrom-Linien und markante Tribal-Strukturen im angesagten Y2K-Stil.',
+    descriptionEn:
+      'Avant-garde liquid chrome lines and sharp tribal contours in iconic Y2K aesthetic.',
   },
   {
     id: 'w3',
@@ -36,9 +57,11 @@ export const OUR_WORK_GALLERY: WorkItem[] = [
     category: '3d-sculpted',
     categoryLabelDe: '3D Blüten & Charms',
     categoryLabelEn: '3D Florals & Charms',
-    image: '/src/assets/images/work_lavender_bloom_1790291572935.jpg',
-    descriptionDe: 'Skulpturierte Lavendel-3D-Blüten, funkelnde Strasssteine und zarte Schmetterlings-Applikationen.',
-    descriptionEn: 'Sculpted lavender 3D flowers, sparkling rhinestones and delicate butterfly charms.',
+    image: workLavenderBloom,
+    descriptionDe:
+      'Skulpturierte Lavendel-3D-Blüten, funkelnde Strasssteine und zarte Schmetterlings-Applikationen.',
+    descriptionEn:
+      'Sculpted lavender 3D flowers, sparkling rhinestones and delicate butterfly charms.',
   },
   {
     id: 'w4',
@@ -46,9 +69,11 @@ export const OUR_WORK_GALLERY: WorkItem[] = [
     category: 'french-art',
     categoryLabelDe: 'French & Nail Art',
     categoryLabelEn: 'French & Nail Art',
-    image: '/src/assets/images/work_blue_porcelain_1790291613425.jpg',
-    descriptionDe: 'Majolika-Porzellanmuster in edlem Kobaltblau mit handgezogenen Goldchrome-Spiegelkanten.',
-    descriptionEn: 'Majolica cobalt blue porcelain motifs with mirror gold chrome smile lines.',
+    image: workBluePorcelain,
+    descriptionDe:
+      'Majolika-Porzellanmuster in edlem Kobaltblau mit handgezogenen Goldchrome-Spiegelkanten.',
+    descriptionEn:
+      'Majolica cobalt blue porcelain motifs with mirror gold chrome smile lines.',
   },
   {
     id: 'w5',
@@ -56,9 +81,11 @@ export const OUR_WORK_GALLERY: WorkItem[] = [
     category: '3d-sculpted',
     categoryLabelDe: '3D Blüten & Charms',
     categoryLabelEn: '3D Florals & Charms',
-    image: '/src/assets/images/work_pink_rhinestones_1790291623429.jpg',
-    descriptionDe: 'Luxuriöser Rosé-Look mit handgefertigten 3D-Schleifen und dichter Swarovski-Kristallfassung.',
-    descriptionEn: 'Luxury rose aesthetic with handmade 3D ribbon bows and full Swarovski crystal setting.',
+    image: workPinkRhinestones,
+    descriptionDe:
+      'Luxuriöser Rosé-Look mit handgefertigten 3D-Schleifen und dichter Swarovski-Kristallfassung.',
+    descriptionEn:
+      'Luxury rose aesthetic with handmade 3D ribbon bows and full Swarovski crystal setting.',
   },
   {
     id: 'w6',
@@ -66,9 +93,11 @@ export const OUR_WORK_GALLERY: WorkItem[] = [
     category: 'chrome-metallic',
     categoryLabelDe: 'Chrome & Metallic',
     categoryLabelEn: 'Chrome & Metallic',
-    image: '/src/assets/images/work_metallic_green_1790291636408.jpg',
-    descriptionDe: 'Tiefer Smaragd-Cateye-Glanz kombiniert mit organisch geschmolzenem Silberrelief.',
-    descriptionEn: 'Deep emerald cat-eye shimmer layered with organic melted silver chrome textures.',
+    image: workMetallicGreen,
+    descriptionDe:
+      'Tiefer Smaragd-Cateye-Glanz kombiniert mit organisch geschmolzenem Silberrelief.',
+    descriptionEn:
+      'Deep emerald cat-eye shimmer layered with organic melted silver chrome textures.',
   },
   {
     id: 'w7',
@@ -76,9 +105,11 @@ export const OUR_WORK_GALLERY: WorkItem[] = [
     category: '3d-sculpted',
     categoryLabelDe: '3D Blüten & Charms',
     categoryLabelEn: '3D Florals & Charms',
-    image: '/src/assets/images/work_pearl_seashell_1790291646533.jpg',
-    descriptionDe: '3D Muschel-Rillenoptik, goldene Seesterne und schimmernder Türkis-French-Welleneffekt.',
-    descriptionEn: '3D sculpted seashell ridges, golden starfish and shimmering turquoise wave French.',
+    image: workPearlSeashell,
+    descriptionDe:
+      '3D Muschel-Rillenoptik, goldene Seesterne und schimmernder Türkis-French-Welleneffekt.',
+    descriptionEn:
+      '3D sculpted seashell ridges, golden starfish and shimmering turquoise wave French.',
   },
   {
     id: 'w8',
@@ -86,9 +117,11 @@ export const OUR_WORK_GALLERY: WorkItem[] = [
     category: 'french-art',
     categoryLabelDe: 'French & Nail Art',
     categoryLabelEn: 'French & Nail Art',
-    image: '/src/assets/images/work_polka_dots_1790291583220.jpg',
-    descriptionDe: 'Sonnengelbe French-Spitzen mit präzisen Schokopunkten im charmanten Retro-Look.',
-    descriptionEn: 'Pastel yellow French tips with sharp micro chocolate dots for a chic retro vibe.',
+    image: workPolkaDots,
+    descriptionDe:
+      'Sonnengelbe French-Spitzen mit präzisen Schokopunkten im charmanten Retro-Look.',
+    descriptionEn:
+      'Pastel yellow French tips with sharp micro chocolate dots for a chic retro vibe.',
   },
   {
     id: 'w9',
@@ -96,9 +129,11 @@ export const OUR_WORK_GALLERY: WorkItem[] = [
     category: 'chrome-metallic',
     categoryLabelDe: 'Chrome & Metallic',
     categoryLabelEn: 'Chrome & Metallic',
-    image: '/src/assets/images/work_burgundy_cateye_1790292149206.jpg',
-    descriptionDe: 'Samtiger, magnetischer Burgund-Cateye-Schimmer auf perfekt modellierter Mandelform.',
-    descriptionEn: 'Velvety magnetic burgundy cat-eye shimmer on flawlessly sculpted almond nails.',
+    image: workBurgundyCateye,
+    descriptionDe:
+      'Samtiger, magnetischer Burgund-Cateye-Schimmer auf perfekt modellierter Mandelform.',
+    descriptionEn:
+      'Velvety magnetic burgundy cat-eye shimmer on flawlessly sculpted almond nails.',
   },
   {
     id: 'w10',
@@ -106,9 +141,11 @@ export const OUR_WORK_GALLERY: WorkItem[] = [
     category: 'french-art',
     categoryLabelDe: 'French & Nail Art',
     categoryLabelEn: 'French & Nail Art',
-    image: '/src/assets/images/work_milky_swirls_1790292158668.jpg',
-    descriptionDe: 'Zartes Milky Nude mit handgezeichneten weißen Swirl-Linien und dezentem Glaze-Finish.',
-    descriptionEn: 'Delicate milky nude base with hand-drawn fine white swirls and glazed pearl finish.',
+    image: workMilkySwirls,
+    descriptionDe:
+      'Zartes Milky Nude mit handgezeichneten weißen Swirl-Linien und dezentem Glaze-Finish.',
+    descriptionEn:
+      'Delicate milky nude base with hand-drawn fine white swirls and glazed pearl finish.',
   },
   {
     id: 'w11',
@@ -116,9 +153,11 @@ export const OUR_WORK_GALLERY: WorkItem[] = [
     category: '3d-sculpted',
     categoryLabelDe: '3D Blüten & Charms',
     categoryLabelEn: '3D Florals & Charms',
-    image: '/src/assets/images/work_jelly_droplets_1790292169511.jpg',
-    descriptionDe: 'Transluzentes Flieder-Jelly mit ultrarealistischen 3D-Wassertropfen und Silberkaviar.',
-    descriptionEn: 'Translucent lilac jelly gel with realistic 3D water droplets and micro silver caviar.',
+    image: workJellyDroplets,
+    descriptionDe:
+      'Transluzentes Flieder-Jelly mit ultrarealistischen 3D-Wassertropfen und Silberkaviar.',
+    descriptionEn:
+      'Translucent lilac jelly gel with realistic 3D water droplets and micro silver caviar.',
   },
   {
     id: 'w12',
@@ -126,9 +165,11 @@ export const OUR_WORK_GALLERY: WorkItem[] = [
     category: 'tribal-y2k',
     categoryLabelDe: 'Liquid Chrome & Tribal',
     categoryLabelEn: 'Liquid Chrome & Tribal',
-    image: '/src/assets/images/work_gothic_cross_1790292179204.jpg',
-    descriptionDe: 'Mattes Schwarz kombiniert mit hochglänzendem French und metallischen Y2K-Chromkreuzen.',
-    descriptionEn: 'Matte black paired with high-gloss smile lines and 3D liquid chrome Y2K cross charms.',
+    image: workGothicCross,
+    descriptionDe:
+      'Mattes Schwarz kombiniert mit hochglänzendem French und metallischen Y2K-Chromkreuzen.',
+    descriptionEn:
+      'Matte black paired with high-gloss smile lines and 3D liquid chrome Y2K cross charms.',
   },
   {
     id: 'w13',
@@ -136,9 +177,11 @@ export const OUR_WORK_GALLERY: WorkItem[] = [
     category: 'chrome-metallic',
     categoryLabelDe: 'Chrome & Metallic',
     categoryLabelEn: 'Chrome & Metallic',
-    image: '/src/assets/images/work_glazed_peach_1790292190048.jpg',
-    descriptionDe: 'Perlmuttartiger Glazed-Donut-Chrome in zartem Pfirsich-Rosé auf Natur-Square-Nägeln.',
-    descriptionEn: 'High-sheen glazed donut chrome in soft peach-rose on clean square natural nails.',
+    image: workGlazedPeach,
+    descriptionDe:
+      'Perlmuttartiger Glazed-Donut-Chrome in zartem Pfirsich-Rosé auf Natur-Square-Nägeln.',
+    descriptionEn:
+      'High-sheen glazed donut chrome in soft peach-rose on clean square natural nails.',
   },
   {
     id: 'w14',
@@ -146,9 +189,11 @@ export const OUR_WORK_GALLERY: WorkItem[] = [
     category: 'french-art',
     categoryLabelDe: 'French & Nail Art',
     categoryLabelEn: 'French & Nail Art',
-    image: '/src/assets/images/work_cherry_minimalist_1790292199348.jpg',
-    descriptionDe: 'Süße, minimalistische Handmalerei roter Kirschen auf makellosem Sheer-Blush-Gel.',
-    descriptionEn: 'Chic minimalist hand-painted micro red cherries on flawless sheer blush gel.',
+    image: workCherryMinimalist,
+    descriptionDe:
+      'Süße, minimalistische Handmalerei roter Kirschen auf makellosem Sheer-Blush-Gel.',
+    descriptionEn:
+      'Chic minimalist hand-painted micro red cherries on flawless sheer blush gel.',
   },
   {
     id: 'w15',
@@ -156,9 +201,11 @@ export const OUR_WORK_GALLERY: WorkItem[] = [
     category: 'tribal-y2k',
     categoryLabelDe: 'Liquid Chrome & Tribal',
     categoryLabelEn: 'Liquid Chrome & Tribal',
-    image: '/src/assets/images/work_stiletto_gold_1790292207724.jpg',
-    descriptionDe: 'Dramatische Stilettos mit dreidimensional verlaufendem flüssigem Goldchrom und Strass.',
-    descriptionEn: 'Dramatic stilettos with 3D sculpted liquid gold chrome drips and Swarovski crystals.',
+    image: workStilettoGold,
+    descriptionDe:
+      'Dramatische Stilettos mit dreidimensional verlaufendem flüssigem Goldchrom und Strass.',
+    descriptionEn:
+      'Dramatic stilettos with 3D sculpted liquid gold chrome drips and Swarovski crystals.',
   },
   {
     id: 'w16',
@@ -166,8 +213,10 @@ export const OUR_WORK_GALLERY: WorkItem[] = [
     category: 'french-art',
     categoryLabelDe: 'French & Nail Art',
     categoryLabelEn: 'French & Nail Art',
-    image: '/src/assets/images/work_french_diamond_1790292218022.jpg',
-    descriptionDe: 'Messerscharfe weiße French-Spitzen mit funkelndem Solitär-Kristall auf dem Ringfinger.',
-    descriptionEn: 'Razor-sharp white French tips with a sparkling solitaire crystal accent on ring finger.',
+    image: workFrenchDiamond,
+    descriptionDe:
+      'Messerscharfe weiße French-Spitzen mit funkelndem Solitär-Kristall auf dem Ringfinger.',
+    descriptionEn:
+      'Razor-sharp white French tips with a sparkling solitaire crystal accent on ring finger.',
   },
 ];
