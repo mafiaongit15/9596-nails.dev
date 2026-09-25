@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { MessageCircle, ChevronDown, Sparkles } from 'lucide-react';
+import heroImage from '../assets/images/hero_hand_purple_glitter_1790292686241.jpg';
 import { SALON_INFO } from '../data/servicesData';
 import { Language, Translations } from '../data/translations';
 
@@ -30,14 +31,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       <div className="absolute top-1/4 -left-20 w-[420px] h-[420px] bg-[#FFE0EE]/60 rounded-full blur-3xl pointer-events-none -z-10" />
       <div className="absolute top-0 right-10 w-[550px] h-[550px] bg-[#FFEBF4]/50 rounded-full blur-3xl pointer-events-none -z-10" />
 
-      {/* 
-        Full-Bleed Editorial Hand Art (Seamlessly integrated into the background canvas)
-        NO PowerPoint box, NO floating rectangle, NO awkward clip-art look!
-        Anchors from the top-right corner exactly like luxury fashion magazines.
-      */}
+      {/* Full-Bleed Editorial Hand Art */}
       <div className="absolute top-0 right-0 h-full w-[65%] sm:w-[52%] lg:w-[48%] pointer-events-none select-none overflow-hidden z-0">
         <img
-          src="/src/assets/images/hero_hand_purple_glitter_1790292686241.jpg"
+          src={heroImage}
           alt="Luxury Nail and Beauty Treatments – 9596 Nails Berlin"
           className="w-full h-full object-cover object-top sm:object-right-top opacity-30 sm:opacity-85 lg:opacity-100 transition-opacity duration-700"
           style={{
@@ -50,21 +47,21 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           loading="eager"
         />
 
-        {/* Soft atmospheric gradient fades so the photo merges seamlessly into the canvas */}
+        {/* Soft atmospheric gradient fades */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#FFF5F8] via-[#FFF5F8]/50 to-transparent sm:hidden" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#FFF5F8] via-transparent to-transparent" />
       </div>
 
-      {/* Foreground Content: High-contrast, airy, editorial typography */}
+      {/* Foreground Content */}
       <div className="w-full max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10 py-10 sm:py-14 lg:py-20">
         <div className="max-w-lg lg:max-w-xl flex flex-col items-start">
-          {/* Subtle Studio Badge */}
+          {/* Studio Badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/80 border border-[#F4CFDE] text-[#C95386] text-[10px] sm:text-xs font-serif font-semibold uppercase tracking-[0.2em] mb-4 shadow-2xs">
             <Sparkles className="w-3 h-3 text-[#E778A4]" />
             <span>9596 Nails · Berlin Studio</span>
           </div>
 
-          {/* Editorial All-Caps Serif Headline from reference */}
+          {/* Main Headline */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-serif font-normal text-[#1A1215] leading-[1.1] sm:leading-[1.08] tracking-tight uppercase mb-3">
             INDULGE IN <br />
             LUXURY NAIL AND WAX <br />
@@ -76,7 +73,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             @ 9596 Nails Berlin.
           </p>
 
-          {/* Action Button & Smooth Scroll Arrow */}
+          {/* Action Buttons */}
           <div className="flex flex-wrap items-center gap-3 sm:gap-4">
             <button
               onClick={onExploreServices}
@@ -96,7 +93,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         </div>
       </div>
 
-      {/* Floating WhatsApp badge on bottom-right matching screenshot position */}
+      {/* Floating WhatsApp Badge */}
       <div className="absolute bottom-4 right-4 sm:bottom-6 sm:right-8 z-30">
         <motion.a
           href={whatsappUrl}
