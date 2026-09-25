@@ -4,6 +4,7 @@ import { MapPin, Navigation, Clock, CheckCircle2, MessageCircle } from 'lucide-r
 import { SALON_INFO } from '../data/servicesData';
 import { getSalonOpenStatus } from '../utils/hoursHelper';
 import { Language, Translations } from '../data/translations';
+import logo9596Nails from '../assets/images/logo_9596_nails_1790291551289.jpg';
 
 interface QuickContactSectionProps {
   lang: Language;
@@ -27,7 +28,6 @@ export const QuickContactSection: React.FC<QuickContactSectionProps> = ({ lang, 
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
-          {/* Column 1: Map Card */}
           <div className="lg:col-span-5 bg-white p-6 sm:p-7 rounded-3xl border border-[#F6D2E1] shadow-xs flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-4">
@@ -39,7 +39,6 @@ export const QuickContactSection: React.FC<QuickContactSectionProps> = ({ lang, 
                 </span>
               </div>
 
-              {/* Embedded Interactive Map */}
               <div className="relative rounded-2xl overflow-hidden aspect-[4/3] bg-[#FCE8F0] border border-[#F6D2E1] mb-5">
                 <iframe
                   title="9596 Nails Berlin Google Maps"
@@ -51,7 +50,7 @@ export const QuickContactSection: React.FC<QuickContactSectionProps> = ({ lang, 
 
                 <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-xs px-3 py-1.5 rounded-full shadow-xs border border-white flex items-center gap-2 text-xs text-[#2A181F] font-semibold">
                   <img
-                    src="/src/assets/images/logo_9596_nails_1790291551289.jpg"
+                    src={logo9596Nails}
                     alt="Logo"
                     className="w-4 h-4 rounded-full"
                   />
@@ -85,7 +84,7 @@ export const QuickContactSection: React.FC<QuickContactSectionProps> = ({ lang, 
                 href={`https://wa.me/${SALON_INFO.whatsappNumber}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-3 rounded-full bg-[#EBF7EE] text-[#1D6C37] hover:bg-[#DDF2E3] text-xs font-semibold transition-colors border border-[#C6ECCF]"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-3 rounded-full bg-[#EBF7EE] text-[#1D6C37] hover:bg-[#DDF2E3] text-xs font-semibold transition-colors"
               >
                 <MessageCircle className="w-3.5 h-3.5 fill-[#25D366] text-[#25D366]" />
                 <span>{t.quickContact.whatsappBtn}</span>
@@ -93,7 +92,6 @@ export const QuickContactSection: React.FC<QuickContactSectionProps> = ({ lang, 
             </div>
           </div>
 
-          {/* Column 2: Opening Times */}
           <div className="lg:col-span-4 bg-white p-6 sm:p-7 rounded-3xl border border-[#F6D2E1] shadow-xs flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between mb-4">
@@ -101,11 +99,7 @@ export const QuickContactSection: React.FC<QuickContactSectionProps> = ({ lang, 
                   {t.quickContact.openingTimes}
                 </span>
                 <div className="flex items-center gap-1.5 text-xs">
-                  <span
-                    className={`w-2 h-2 rounded-full ${
-                      openStatus.isOpen ? 'bg-emerald-500 animate-pulse' : 'bg-amber-500'
-                    }`}
-                  />
+                  <span className={`w-2 h-2 rounded-full ${openStatus.isOpen ? 'bg-emerald-500 animate-pulse' : 'bg-amber-500'}`} />
                   <span className="font-semibold text-[#29171E]">{openStatus.statusText}</span>
                 </div>
               </div>
@@ -141,11 +135,7 @@ export const QuickContactSection: React.FC<QuickContactSectionProps> = ({ lang, 
                   return (
                     <div
                       key={schedule.day}
-                      className={`py-2.5 flex items-center justify-between text-xs transition-colors ${
-                        isToday
-                          ? 'font-bold text-[#22161A] bg-[#FFF0F6] px-2.5 rounded-xl -mx-1 border border-[#FCE1EC]'
-                          : 'text-[#644B55]'
-                      }`}
+                      className={`py-2.5 flex items-center justify-between text-xs transition-colors ${isToday ? 'font-bold text-[#22161A] bg-[#FFF0F6] px-2.5 rounded-xl -mx-1 border border-[#FCE1EC]' : 'text-[#644B55]'}`}
                     >
                       <div className="flex items-center gap-2">
                         {isToday && <span className="w-1.5 h-1.5 rounded-full bg-[#D84A86]" />}
@@ -161,11 +151,10 @@ export const QuickContactSection: React.FC<QuickContactSectionProps> = ({ lang, 
             </div>
 
             <div className="pt-4 border-t border-[#F8E2EC] mt-4 text-[11px] text-[#8C6B79]">
-              <p>🕐 {openStatus.nextInfo}</p>
+              <p><Clock className="inline w-3 h-3 mr-1" />{openStatus.nextInfo}</p>
             </div>
           </div>
 
-          {/* Column 3: Additional Information */}
           <div className="lg:col-span-3 bg-white p-6 sm:p-7 rounded-3xl border border-[#F6D2E1] shadow-xs flex flex-col justify-between">
             <div>
               <span className="text-xs font-semibold uppercase tracking-wider text-[#D14F84] block mb-4">
@@ -174,26 +163,11 @@ export const QuickContactSection: React.FC<QuickContactSectionProps> = ({ lang, 
 
               <ul className="space-y-4">
                 {[
-                  {
-                    title: 'Instant Confirmation',
-                    desc: lang === 'de' ? 'Sofortige Terminbestätigung per E-Mail oder WhatsApp.' : 'Fast confirmation via WhatsApp or Email.',
-                  },
-                  {
-                    title: 'Custom Nail Art',
-                    desc: lang === 'de' ? 'Bringe gerne deine Inspirationsfotos oder TikToks mit.' : 'Bring your Pinterest or TikTok reference shots.',
-                  },
-                  {
-                    title: 'Hygiene Standards',
-                    desc: lang === 'de' ? 'Autoklav-Sterilisation und desinfizierte Plätze.' : 'Medical autoclave sterilization for all metal bits.',
-                  },
-                  {
-                    title: 'Loyalty Rewards',
-                    desc: lang === 'de' ? 'Treuebonus für wiederkehrende Stammkundinnen.' : 'Exclusive loyalty perks for returning clients.',
-                  },
-                  {
-                    title: 'Gift Cards Available',
-                    desc: lang === 'de' ? 'Stilvolle Geschenkgutscheine im Studio erhältlich.' : 'Chic gift vouchers available at our studio desk.',
-                  },
+                  { title: 'Instant Confirmation', desc: lang === 'de' ? 'Sofortige Terminbestätigung per E-Mail oder WhatsApp.' : 'Fast confirmation via WhatsApp or Email.' },
+                  { title: 'Custom Nail Art', desc: lang === 'de' ? 'Bringe gerne deine Inspirationsfotos oder TikToks mit.' : 'Bring your Pinterest or TikTok reference shots.' },
+                  { title: 'Hygiene Standards', desc: lang === 'de' ? 'Autoklav-Sterilisation und desinfizierte Plätze.' : 'Medical autoclave sterilization for all metal bits.' },
+                  { title: 'Loyalty Rewards', desc: lang === 'de' ? 'Treuebonus für wiederkehrende Stammkundinnen.' : 'Exclusive loyalty perks for returning clients.' },
+                  { title: 'Gift Cards Available', desc: lang === 'de' ? 'Stilvolle Geschenkgutscheine im Studio erhältlich.' : 'Chic gift vouchers available at our studio desk.' },
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <CheckCircle2 className="w-4 h-4 text-[#D84A86] shrink-0 mt-0.5" />
@@ -220,3 +194,5 @@ export const QuickContactSection: React.FC<QuickContactSectionProps> = ({ lang, 
     </section>
   );
 };
+
+export default QuickContactSection;
