@@ -1,4 +1,3 @@
-```tsx
 import React, { useState } from 'react';
 import { Instagram, MapPin, Check, ArrowRight } from 'lucide-react';
 import { SALON_INFO } from '../data/servicesData';
@@ -97,7 +96,7 @@ export const Footer: React.FC<FooterProps> = ({ lang, t }) => {
                 aria-label="TikTok"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .58.04.86.12V9.42a6.34 6.34 0 0 0-.86-.06 6.34 6.34 0 0 0-6.34 6.34 6.34 0 0 0 6.34-6.34V8.52a8.27 8.27 0 0 0 5.07 1.76V6.85a4.85 4.85 0 0 1-1.3-.16z" />
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .58.04.86.12V9.42a6.34 6.34 0 0 0-.86-.06 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.31-5.36V9.42a8.45 8.45 0 0 0 4.84 1.79v-3.37a5.18 5.18 0 0 1-3.76-2.35Z" />
                 </svg>
               </a>
 
@@ -165,7 +164,7 @@ export const Footer: React.FC<FooterProps> = ({ lang, t }) => {
 
                 <button
                   type="submit"
-                  className="px-4 py-2.5 bg-gradient-to-r from-[#FCAECB] to-[#EE82AB] text-[#29141D] text-xs font-bold rounded-xl hover:brightness-105 transition-all shrink-0 cursor-pointer shadow-xs"
+                  className="px-4 py-2.5 bg-gradient-to-r from-[#FCAECB] to-[#EE82AB] text-[#29141D] text-xs font-bold rounded-xl hover:brightness-105 transition-all shrink-0 cursor-pointer shadow-md"
                 >
                   <ArrowRight className="w-4 h-4" />
                 </button>
@@ -223,4 +222,5 @@ export const Footer: React.FC<FooterProps> = ({ lang, t }) => {
     </footer>
   );
 };
-```
+
+export default Footer;
