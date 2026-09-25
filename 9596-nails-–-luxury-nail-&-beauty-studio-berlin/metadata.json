@@ -1,0 +1,7 @@
+{
+  "name": "9596 Nails – Luxury Nail & Beauty Studio Berlin",
+  "description": "Exklusive Maniküre, Pediküre, Nagelmodellage und Wimpernverlängerung bei 9596 Nails in Berlin. Online-Buchung und Termine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
